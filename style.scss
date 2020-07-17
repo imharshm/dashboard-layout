@@ -230,9 +230,13 @@ body {
       // graph and table view
       .graph-table-view {
         display: flex;
+        flex-wrap: wrap;
         .graph-table-card {
+          transition: all 0.3s ease-in;
+          flex: 0 0 50%;
           width: 50%;
-          height: 510px;
+          height: auto;
+          margin-bottom: 1rem;
           .graph-table-card-data {
             background-color: #ffffff;
             border-radius: 10px;
@@ -262,6 +266,75 @@ body {
               }
             }
             .doughnut-chart {
+              .setting-view {
+                display: flex;
+                height: 200px;
+                margin-top: 1.5rem;
+                .count {
+                  flex: 0 0 25%;
+                  background-color: orange;
+                  text-align: center;
+                  font-size: 50px;
+                  color: #ffffff;
+                  padding: 10px;
+                }
+                .setting {
+                  flex: 0 0 75%;
+                  background-color: purple;
+                  border-radius: 0 45px 0 0;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  .circle {
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    background: #ffff;
+                    border-radius: 50%;
+                    margin: 20px 20px 20px auto;
+                  }
+                  .setting-name {
+                    padding: 20px;
+                    .setting-title {
+                      color: #ffffff;
+                      font-size: 25px;
+                    }
+                    .setting-sub-title {
+                      color: #c7c7c7;
+                      font-size: 14px;
+                    }
+                  }
+                }
+              }
+              .setting-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .setting-name {
+                  padding: 20px 0;
+                  .setting-title {
+                    color: purple;
+                    font-size: 25px;
+                  }
+                  .setting-sub-title {
+                    color: #333333;
+                    font-size: 12px;
+                  }
+                }
+                .actions {
+                  button {
+                    background-color: #fd791a;
+                    color: #ffffff;
+                    border-radius: 5px;
+                    border: 0;
+                    padding: 5px 10px;
+                    &:focus {
+                      outline: none;
+                    }
+                  }
+                }
+              }
+
               .canvas-con {
                 @include alignment(flex, center, center);
                 flex-direction: column;
@@ -370,6 +443,72 @@ body {
                 }
               }
             }
+            .covid-info-card {
+              background: #1f5c92;
+              border-radius: 20px;
+              padding: 1rem;
+              color: #fff;
+              .covid-count-number {
+                display: flex;
+                .covid-card {
+                  text-align: center;
+                  &:not(:last-child) {
+                    margin-right: 0.5rem;
+                  }
+                  .title {
+                    color: #dadada;
+                  }
+                  .count {
+                    font-weight: bold;
+                  }
+                }
+
+                .total-count {
+                  .count {
+                    font-size: 20px;
+                  }
+                }
+                .active-count {
+                  .count {
+                    font-size: 18px;
+                  }
+                }
+                .recovered-count {
+                  .count {
+                    font-size: 22px;
+                  }
+                }
+              }
+              .covid-count-perc {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 2rem;
+                .recov-covid-perc {
+                  .circle {
+                    background-color: #007d66;
+                  }
+                }
+                .circle {
+                  border-radius: 50%;
+                  display: flex;
+                  flex-wrap: wrap;
+                  align-content: center;
+                  align-items: center;
+                  justify-content: center;
+                  flex-direction: column;
+                  background: #e48506;
+                  width: 100px;
+                  height: 100px;
+                  .title {
+                    font-size: 15px;
+                  }
+                  .perc {
+                    font-size: 20px;
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
             .refresh {
               position: absolute;
               right: 5px;
@@ -377,12 +516,12 @@ body {
               padding: 10px;
             }
           }
-          &:nth-child(1) {
+          &:nth-child(odd) {
             .graph-table-card-data {
               margin-right: 0.5rem;
             }
           }
-          &:nth-child(2) {
+          &:nth-child(even) {
             .graph-table-card-data {
               margin-left: 0.5rem;
             }
@@ -482,13 +621,13 @@ body {
                 }
               }
             }
-            &:nth-child(1) {
+            &:nth-child(odd) {
               .graph-table-card-data {
                 margin-right: 0;
                 margin-bottom: 0.5rem;
               }
             }
-            &:nth-child(2) {
+            &:nth-child(even) {
               .graph-table-card-data {
                 margin-left: 0;
                 margin-top: 0.5rem;
