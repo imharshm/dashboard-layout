@@ -1,406 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
     <title>Document</title>
 
     <!-- css imports -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
+      <div class="sidebar">
+        <div class="sidebar-logo">
+          <div class="sidebar-img">
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="active">
+            <a href=""><i class="fa fa-home"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-pie-chart"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-cog"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-info-circle"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-question-circle"></i></a>
+          </li>
+        </ul>
+        <ul class="sidebar-bottom-menu">
+          <li>
+            <a href=""><i class="fa fa-user"></i></a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="sidebar">
-            <div class="sidebar-logo">
-                <div class="sidebar-img">
-                    <i class="fa fa-star"></i>
-                </div>
-            </div>
-            <ul class="sidebar-menu">
-                <li class="active"><a href=""><i class="fa fa-home"></i></a></li>
-                <li><a href=""><i class="fa fa-pie-chart"></i></a></li>
-                <li><a href=""><i class="fa fa-cog"></i></a></li>
-                <li><a href=""><i class="fa fa-info-circle"></i></a></li>
-                <li><a href=""><i class="fa fa-question-circle"></i></a></li>
-            </ul>
-            <ul class="sidebar-bottom-menu">
-                <li><a href=""><i class="fa fa-user"></i></a></li>
-            </ul>
+      <div class="main-section">
+        <div class="main-title">
+          <button class="collpase-menu"><i class="fa fa-bars"></i></button>
+          <h2>Dashboard</h2>
+          <div class="input-group">
+            <span class="input-icon"><i class="fa fa-search"></i></span>
+            <input type="search" placeholder="Search" />
+          </div>
         </div>
 
-        <div class="main-section">
-            <div class="main-title">
-                <button class="collpase-menu"><i class="fa fa-bars"></i></button>
-                <h2>Dashboard</h2>
-                <div class="input-group">
-                    <span class="input-icon"><i class="fa fa-search"></i></span>
-                    <input type="search" placeholder="Search">
+        <div class="container-view">
+          <div class="project-section">
+            <div class="project-items">
+              <div class="project-card add-project">
+                <span class="plus-button"><i class="fa fa-plus"></i></span>
+                <span class="plus-title">Add Project</span>
+              </div>
+              <div class="project-card active">
+                <div class="project-title">
+                  <h4 class="title">Casual Management</h4>
+                  <span class="sub-title">Disruptive portfolio</span>
                 </div>
+                <div class="project-date">03-21-2020</div>
+              </div>
+              <div class="project-card">
+                <div class="project-title">
+                  <h4 class="title">Document Management</h4>
+                  <span class="sub-title">Global sustain portfolio</span>
+                </div>
+                <div class="project-date">03-21-2020</div>
+              </div>
+              <div class="project-card">
+                <div class="project-title">
+                  <h4 class="title">Procurement Management</h4>
+                  <span class="sub-title">Sustain portfolio</span>
+                </div>
+                <div class="project-date">06-21-2020</div>
+              </div>
+              <div class="project-card">
+                <div class="project-title">
+                  <h4 class="title">Procurement Management</h4>
+                  <span class="sub-title">Sustain portfolio</span>
+                </div>
+                <div class="project-date">06-21-2020</div>
+              </div>
             </div>
+          </div>
 
-            <div class="container-view">
-
-                <div class="project-section">
-                    <div class="project-items">
-                        <div class="project-card add-project">
-                            <span class="plus-button"><i class="fa fa-plus"></i></span>
-                            <span class="plus-title">Add Project</span>
-                        </div>
-                        <div class="project-card active">
-                            <div class="project-title">
-                                <h4 class="title">Casual Management</h4>
-                                <span class="sub-title">Disruptive portfolio</span>
-                            </div>
-                            <div class="project-date">03-21-2020</div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-title">
-                                <h4 class="title">Document Management</h4>
-                                <span class="sub-title">Global sustain portfolio</span>
-                            </div>
-                            <div class="project-date">03-21-2020</div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-title">
-                                <h4 class="title">Procurement Management</h4>
-                                <span class="sub-title">Sustain portfolio</span>
-                            </div>
-                            <div class="project-date">06-21-2020</div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-title">
-                                <h4 class="title">Procurement Management</h4>
-                                <span class="sub-title">Sustain portfolio</span>
-                            </div>
-                            <div class="project-date">06-21-2020</div>
-                        </div>
-                    </div>
+          <div class="graph-table-view">
+            <div class="graph-table-card">
+              <div class="graph-table-card-data">
+                <div class="card-header">
+                  <div class="card-title">
+                    <h4 class="title">Casual Management</h4>
+                    <span class="sub-title">Disruptive portfolio</span>
+                  </div>
+                  <div class="card-action">
+                    <span class="filter">
+                      <i class="fa fa-bars"></i>
+                    </span>
+                    <span class="more-action">
+                      <i class="fa fa-ellipsis-v"></i>
+                    </span>
+                  </div>
                 </div>
-
-                <div class="graph-table-view">
-                    <div class="graph-table-card">
-                        <div class="graph-table-card-data">
-                            <div class="card-header">
-                                <div class="card-title">
-                                    <h4 class="title">Casual Management</h4>
-                                    <span class="sub-title">Disruptive portfolio</span>
-                                </div>
-                                <div class="card-action">
-                                    <span class="filter">
-                                        <i class="fa fa-bars"></i>
-                                    </span>
-                                    <span class="more-action">
-                                        <i class="fa fa-ellipsis-v"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="doughnut-chart">
-                                <div class="canvas-con">
-                                    <div id="my-legend-con" class="legend-con"></div>
-                                    <p>Total Applications</p>
-                                    <div class="canvas-con-inner">
-                                        <canvas id="mychart" height="250px"></canvas>
-                                    </div>
-                                    <p class="chart-date">JAN 20</p>
-                                </div>
-                            </div>
-                            <span class="refresh"><i class="fa fa-refresh"></i></span>
-                        </div>
+                <div class="doughnut-chart">
+                  <div class="canvas-con">
+                    <div id="my-legend-con" class="legend-con"></div>
+                    <p>Total Applications</p>
+                    <div class="canvas-con-inner">
+                      <canvas id="mychart" height="250px"></canvas>
                     </div>
-                    <div class="graph-table-card">
-                        <div class="graph-table-card-data">
-                            <div class="card-header">
-                                <div class="card-title">
-                                    <h4 class="title">Created</h4>
-                                    <span class="sub-title">JAN 20</span>
-                                </div>
-                                <div class="card-action">
-                                    <span class="filter">
-                                        <i class="fa fa-bars"></i>
-                                    </span>
-                                    <span class="more-action">
-                                        <i class="fa fa-ellipsis-v"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="table-view">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th><input type="checkbox"></th>
-                                            <th>Sr No</th>
-                                            <th>Application ID</th>
-                                            <th>Created By</th>
-                                            <th>Payment</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <input type="checkbox">
-                                            </td>
-                                            <td>1</td>
-                                            <td>AC12345</td>
-                                            <td>A V Nair</td>
-                                            <td>Completed</td>
-                                            <td>
-                                                <button class="action-button">View</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <input type="checkbox">
-                                            </td>
-                                            <td>2</td>
-                                            <td>AC12345</td>
-                                            <td>A V Nair</td>
-                                            <td>Completed</td>
-                                            <td>
-                                                <button class="action-button">View</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <input type="checkbox">
-                                            </td>
-                                            <td>3</td>
-                                            <td>AC12345</td>
-                                            <td>A V Nair</td>
-                                            <td>Completed</td>
-                                            <td>
-                                                <button class="action-button">View</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <input type="checkbox">
-                                            </td>
-                                            <td>4</td>
-                                            <td>AC12345</td>
-                                            <td>A V Nair</td>
-                                            <td>Completed</td>
-                                            <td>
-                                                <button class="action-button">View</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <input type="checkbox">
-                                            </td>
-                                            <td>5</td>
-                                            <td>AC12345</td>
-                                            <td>A V Nair</td>
-                                            <td>Completed</td>
-                                            <td>
-                                                <button class="action-button">View</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <input type="checkbox">
-                                            </td>
-                                            <td>6</td>
-                                            <td>AC12345</td>
-                                            <td>A V Nair</td>
-                                            <td>Completed</td>
-                                            <td>
-                                                <button class="action-button">View</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <input type="checkbox">
-                                            </td>
-                                            <td>7</td>
-                                            <td>AC12345</td>
-                                            <td>A V Nair</td>
-                                            <td>Completed</td>
-                                            <td>
-                                                <button class="action-button">View</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td><span class="page-number">1</span></td>
-                                            <td colspan="2">Page 1/2</td>
-                                            <td colspan="3">Showing 7 items in the listing</td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <span class="refresh"><i class="fa fa-refresh"></i></span>
-                        </div>
-                    </div>
-                    <div class="graph-table-card">
-                        <div class="graph-table-card-data">
-                            <div class="card-header">
-                                <div class="card-title">
-                                    <h4 class="title">Casual Management</h4>
-                                    <span class="sub-title">Disruptive portfolio</span>
-                                </div>
-                                <div class="card-action">
-                                    <span class="filter">
-                                        <i class="fa fa-bars"></i>
-                                    </span>
-                                    <span class="more-action">
-                                        <i class="fa fa-ellipsis-v"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="doughnut-chart">
-                                <div class="setting-view">
-                                    <div class="count">01</div>
-                                    <div class="setting">
-                                        <span class="circle"></span>
-                                        <div class="setting-name">
-                                            <div class="setting-title">Setting</div>
-                                            <div class="setting-sub-title">Platform Access</div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="setting-footer">
-                                    <div class="setting-name">
-                                        <div class="setting-title">Setting</div>
-                                        <div class="setting-sub-title">Platform Access</div>
-                                    </div>
-                                    <div class="actions">
-                                        <button>Button</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <span class="refresh"><i class="fa fa-refresh"></i></span>
-                        </div>
-                    </div>
-                    <div class="graph-table-card">
-                        <div class="graph-table-card-data">
-                            <div class="covid-info-card">
-                                <div class="covid-count-number">
-                                    <div class="total-count covid-card">
-                                        <span class="title">Total Patient</span>
-                                        <span class="count">2,33,000</span>
-                                    </div>
-                                    <div class="active-count covid-card">
-                                        <span class="title">Active Patients</span>
-                                        <span class="count">1,23,000</span>
-                                    </div>
-                                    <div class="recovered-count covid-card">
-                                        <span class="title">Recovered Patients</span>
-                                        <span class="count">1,13,000</span>
-                                    </div>
-                                </div>
-                                <div class="covid-count-perc">
-                                    <div class="total-covid-perc">
-                                        <div class="circle">
-                                            <span class="title">Total</span>
-                                            <span class="perc">45%</span>
-                                        </div>
-                                    </div>
-                                    <div class="recov-covid-perc">
-                                        <div class="circle">
-                                            <span class="title">Recovered</span>
-                                            <span class="perc">56%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="chart-date">JAN 20</p>
+                  </div>
                 </div>
+                <span class="refresh"><i class="fa fa-refresh"></i></span>
+              </div>
             </div>
+            <div class="graph-table-card">
+              <div class="graph-table-card-data">
+                <div class="card-header">
+                  <div class="card-title">
+                    <h4 class="title">Created</h4>
+                    <span class="sub-title">JAN 20</span>
+                  </div>
+                  <div class="card-action">
+                    <span class="filter">
+                      <i class="fa fa-bars"></i>
+                    </span>
+                    <span class="more-action">
+                      <i class="fa fa-ellipsis-v"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="table-view">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th><input type="checkbox" /></th>
+                        <th>Sr No</th>
+                        <th>Application ID</th>
+                        <th>Created By</th>
+                        <th>Payment</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input type="checkbox" />
+                        </td>
+                        <td>1</td>
+                        <td>AC12345</td>
+                        <td>A V Nair</td>
+                        <td>Completed</td>
+                        <td>
+                          <button class="action-button">View</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" />
+                        </td>
+                        <td>2</td>
+                        <td>AC12345</td>
+                        <td>A V Nair</td>
+                        <td>Completed</td>
+                        <td>
+                          <button class="action-button">View</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" />
+                        </td>
+                        <td>3</td>
+                        <td>AC12345</td>
+                        <td>A V Nair</td>
+                        <td>Completed</td>
+                        <td>
+                          <button class="action-button">View</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" />
+                        </td>
+                        <td>4</td>
+                        <td>AC12345</td>
+                        <td>A V Nair</td>
+                        <td>Completed</td>
+                        <td>
+                          <button class="action-button">View</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" />
+                        </td>
+                        <td>5</td>
+                        <td>AC12345</td>
+                        <td>A V Nair</td>
+                        <td>Completed</td>
+                        <td>
+                          <button class="action-button">View</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" />
+                        </td>
+                        <td>6</td>
+                        <td>AC12345</td>
+                        <td>A V Nair</td>
+                        <td>Completed</td>
+                        <td>
+                          <button class="action-button">View</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" />
+                        </td>
+                        <td>7</td>
+                        <td>AC12345</td>
+                        <td>A V Nair</td>
+                        <td>Completed</td>
+                        <td>
+                          <button class="action-button">View</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td><span class="page-number">1</span></td>
+                        <td colspan="2">Page 1/2</td>
+                        <td colspan="3">Showing 7 items in the listing</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <span class="refresh"><i class="fa fa-refresh"></i></span>
+              </div>
+            </div>
+            <div class="graph-table-card">
+              <div class="graph-table-card-data">
+                <div class="card-header">
+                  <div class="card-title">
+                    <h4 class="title">Casual Management</h4>
+                    <span class="sub-title">Disruptive portfolio</span>
+                  </div>
+                  <div class="card-action">
+                    <span class="filter">
+                      <i class="fa fa-bars"></i>
+                    </span>
+                    <span class="more-action">
+                      <i class="fa fa-ellipsis-v"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="doughnut-chart">
+                  <div class="setting-view">
+                    <div class="count">01</div>
+                    <div class="setting">
+                      <span class="circle"></span>
+                      <div class="setting-name">
+                        <div class="setting-title">Setting</div>
+                        <div class="setting-sub-title">Platform Access</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="setting-footer">
+                    <div class="setting-name">
+                      <div class="setting-title">Setting</div>
+                      <div class="setting-sub-title">Platform Access</div>
+                    </div>
+                    <div class="actions">
+                      <button>Button</button>
+                    </div>
+                  </div>
+                </div>
+                <span class="refresh"><i class="fa fa-refresh"></i></span>
+              </div>
+            </div>
+            <div class="graph-table-card">
+              <div class="graph-table-card-data">
+                <div class="covid-info-card">
+                  <div class="covid-count-number">
+                    <div class="total-count covid-card">
+                      <span class="title">Total Patient</span>
+                      <span class="count">2,33,000</span>
+                    </div>
+                    <div class="active-count covid-card">
+                      <span class="title">Active Patients</span>
+                      <span class="count">1,23,000</span>
+                    </div>
+                    <div class="recovered-count covid-card">
+                      <span class="title">Recovered Patients</span>
+                      <span class="count">1,13,000</span>
+                    </div>
+                  </div>
+                  <div class="covid-count-perc">
+                    <div class="total-covid-perc">
+                      <div class="circle">
+                        <span class="title">Total</span>
+                        <span class="perc">45%</span>
+                      </div>
+                    </div>
+                    <div class="recov-covid-perc">
+                      <div class="circle">
+                        <span class="title">Recovered</span>
+                        <span class="perc">56%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- javascript imports -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script>
-        // chart font and other css customization
-        Chart.pluginService.register({
-            beforeDraw: function (chart) {
-                var width = chart.chart.width,
-                    height = chart.chart.height,
-                    ctx = chart.chart.ctx;
-                ctx.restore();
-                var fontSize = (height / 114).toFixed(2);
-                ctx.font = fontSize + "em sans-serif";
-                ctx.textBaseline = "middle";
-                var text = chart.config.options.elements.center.text,
-                    textX = Math.round((width - ctx.measureText(text).width) / 2),
-                    textY = height / 2;
-                ctx.fillText(text, textX, textY);
-                ctx.save();
-            }
-        });
+      // chart font and other css customization
+      Chart.pluginService.register({
+        beforeDraw: function (chart) {
+          var width = chart.chart.width,
+            height = chart.chart.height,
+            ctx = chart.chart.ctx;
+          ctx.restore();
+          var fontSize = (height / 114).toFixed(2);
+          ctx.font = fontSize + "em sans-serif";
+          ctx.textBaseline = "middle";
+          var text = chart.config.options.elements.center.text,
+            textX = Math.round((width - ctx.measureText(text).width) / 2),
+            textY = height / 2;
+          ctx.fillText(text, textX, textY);
+          ctx.save();
+        },
+      });
 
-        // chart implementation
-        var myChart = new Chart(document.getElementById('mychart'), {
-            type: 'doughnut',
-            animation: {
-                animateScale: true
+      // chart implementation
+      var myChart = new Chart(document.getElementById("mychart"), {
+        type: "doughnut",
+        animation: {
+          animateScale: true,
+        },
+        data: {
+          labels: ["Created", "Processed"],
+          datasets: [
+            {
+              data: [80, 20],
+              backgroundColor: ["#2E2E2E", "#F17B29"],
             },
-            data: {
-                labels: ["Created", "Processed"],
-                datasets: [{
-                    data: [80, 20],
-                    backgroundColor: ["#2E2E2E", "#F17B29"]
-                }]
+          ],
+        },
+        options: {
+          cutoutPercentage: 80, //for radius size
+          elements: {
+            center: {
+              text: "370,578", //total count added hardcoded
             },
-            options: {
-                cutoutPercentage: 80,  //for radius size
-                elements: {
-                    center: {
-                        text: "370,578", //total count added hardcoded 
-                    }
-                },
-                responsive: true,
-                legend: false,
-                legendCallback: function (chart) {
-                    var legendHtml = [];
-                    legendHtml.push('<ul>');
-                    var item = chart.data;
-                    for (var i = 0; i < item.labels.length; i++) {
-                        legendHtml.push('<li>');
-                        legendHtml.push('<span class="chart-legend" style="background-color:' + item.datasets[0].backgroundColor[i] + '"></span>');
-                        legendHtml.push('<span class="chart-legend-label-text">' + item.labels[i] + '</span>');
-                        legendHtml.push('</li>');
-                    }
-
-                    legendHtml.push('</ul>');
-                    return legendHtml.join("");
-                },
-                tooltips: {
-                    enabled: true,
-                    mode: 'label',
-                    callbacks: {
-                        label: function (tooltipItem, data) { //return label on mouse hover
-                            var indice = tooltipItem.index;
-                            return data.labels[indice];
-                        }
-                    }
-                },
+          },
+          responsive: true,
+          legend: false,
+          legendCallback: function (chart) {
+            var legendHtml = [];
+            legendHtml.push("<ul>");
+            var item = chart.data;
+            for (var i = 0; i < item.labels.length; i++) {
+              legendHtml.push("<li>");
+              legendHtml.push(
+                '<span class="chart-legend" style="background-color:' +
+                  item.datasets[0].backgroundColor[i] +
+                  '"></span>'
+              );
+              legendHtml.push(
+                '<span class="chart-legend-label-text">' + item.labels[i] + "</span>"
+              );
+              legendHtml.push("</li>");
             }
-        });
-        // for custom legend
-        $('#my-legend-con').html(myChart.generateLegend());
 
-        // for menu collpse and show in mobile view
-        $('.collpase-menu').click(function (e) {
-            e.stopPropagation();
-            $('.sidebar').toggleClass('show');
-        });
-        $('body,html').click(function (e) {
-            $('.sidebar').removeClass('show');
-        });
+            legendHtml.push("</ul>");
+            return legendHtml.join("");
+          },
+          tooltips: {
+            enabled: true,
+            mode: "label",
+            callbacks: {
+              label: function (tooltipItem, data) {
+                //return label on mouse hover
+                var indice = tooltipItem.index;
+                return data.labels[indice];
+              },
+            },
+          },
+        },
+      });
+      // for custom legend
+      $("#my-legend-con").html(myChart.generateLegend());
+
+      // for menu collpse and show in mobile view
+      $(".collpase-menu").click(function (e) {
+        e.stopPropagation();
+        $(".sidebar").toggleClass("show");
+      });
+      $("body,html").click(function (e) {
+        $(".sidebar").removeClass("show");
+      });
     </script>
-
-</body>
-
+  </body>
 </html>

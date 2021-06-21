@@ -1,7 +1,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -45,8 +46,13 @@ body {
 }
 
 .container .sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   left: 0;
   top: 0;
@@ -61,9 +67,15 @@ body {
   background: #fff;
   border-radius: 50%;
   margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container .sidebar .sidebar-logo .sidebar-img i {
@@ -118,6 +130,8 @@ body {
 
 .container .main-section .main-title {
   border-bottom: 1px solid #d5d5d5;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-bottom: 1.25rem;
   margin-right: 45px;
@@ -145,9 +159,15 @@ body {
 }
 
 .container .main-section .main-title .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
   padding: 0 20px;
 }
 
@@ -181,16 +201,26 @@ body {
 }
 
 .container .main-section .container-view .project-section .project-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1500px;
 }
 
 .container .main-section .container-view .project-section .project-items .project-card {
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-radius: 10px;
   width: 280px;
   height: 160px;
@@ -213,10 +243,17 @@ body {
 
 .container .main-section .container-view .project-section .project-items .project-card.add-project {
   background-color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   border: 1px dashed #d5d5d5;
 }
 
@@ -225,9 +262,15 @@ body {
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container .main-section .container-view .project-section .project-items .project-card.add-project .plus-button i {
@@ -257,13 +300,19 @@ body {
 }
 
 .container .main-section .container-view .graph-table-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .main-section .container-view .graph-table-view .graph-table-card {
+  -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  flex: 0 0 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   width: 50%;
   height: auto;
   margin-bottom: 1rem;
@@ -279,9 +328,15 @@ body {
 }
 
 .container .main-section .container-view .graph-table-view .graph-table-card .graph-table-card-data .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container .main-section .container-view .graph-table-view .graph-table-card .graph-table-card-data .card-header .card-title .title {
@@ -302,13 +357,17 @@ body {
 }
 
 .container .main-section .container-view .graph-table-view .graph-table-card .graph-table-card-data .doughnut-chart .setting-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 200px;
   margin-top: 1.5rem;
 }
 
 .container .main-section .container-view .graph-table-view .graph-table-card .graph-table-card-data .doughnut-chart .setting-view .count {
-  flex: 0 0 25%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
   background-color: orange;
   text-align: center;
   font-size: 50px;
@@ -317,12 +376,21 @@ body {
 }
 
 .container .main-section .container-view .graph-table-view .graph-table-card .graph-table-card-data .doughnut-chart .setting-view .setting {
-  flex: 0 0 75%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
   background-color: purple;
   border-radius: 0 45px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container .main-section .container-view .graph-table-view .graph-table-card .graph-table-card-data .doughnut-chart .setting-view .setting .circle {
@@ -349,9 +417,15 @@ body {
 }
 
 .container .main-section .container-view .graph-table-view .graph-table-card .graph-table-card-data .doughnut-chart .setting-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container .main-section .container-view .graph-table-view .graph-table-card .graph-table-card-data .doughnut-chart .setting-footer .setting-name {
@@ -381,10 +455,19 @@ body {
 }
 
 .container .main-section .container-view .graph-table-view .graph-table-card .graph-table-card-data .doughnut-chart .canvas-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 400px;
   position: relative;
 }
@@ -425,8 +508,12 @@ body {
 }
 
 .container .main-section .container-view .graph-table-view .graph-table-card .graph-table-card-data .doughnut-chart .canvas-con .legend-con li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 1rem;
 }
 
@@ -516,6 +603,8 @@ body {
 }
 
 .container .main-section .container-view .graph-table-view .graph-table-card .graph-table-card-data .covid-info-card .covid-count-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -548,8 +637,11 @@ body {
 }
 
 .container .main-section .container-view .graph-table-view .graph-table-card .graph-table-card-data .covid-info-card .covid-count-perc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 2rem;
 }
 
@@ -559,12 +651,23 @@ body {
 
 .container .main-section .container-view .graph-table-view .graph-table-card .graph-table-card-data .covid-info-card .covid-count-perc .circle {
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #e48506;
   width: 100px;
   height: 100px;
@@ -596,13 +699,15 @@ body {
 
 @media screen and (max-width: 800px) {
   .container .sidebar {
-    transform: translate3d(-100%, 0px, 0px);
+    -webkit-transform: translate3d(-100%, 0px, 0px);
+            transform: translate3d(-100%, 0px, 0px);
     transition: all 0.5s ease 0s;
     -webkit-transition: all 0.5s ease 0s;
     z-index: 10;
   }
   .container .sidebar.show {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   .container .main-section {
     width: 100%;
@@ -633,13 +738,15 @@ body {
 
 @media screen and (max-width: 560px) {
   .container .sidebar {
-    transform: translate3d(-100%, 0px, 0px);
+    -webkit-transform: translate3d(-100%, 0px, 0px);
+            transform: translate3d(-100%, 0px, 0px);
     transition: all 0.5s ease 0s;
     -webkit-transition: all 0.5s ease 0s;
     z-index: 10;
   }
   .container .sidebar.show {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   .container .main-section {
     width: 100%;
